@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get location info</title>
+</head>
+<body>
+<h1>Location info</h1>
+<form method="post">
+    {% csrf_token %}
+   {{ form }}
+    <button type="submit">Look for matches</button>
+</form>
+
+
+</body>
+</html>

@@ -1,8 +1,8 @@
 from django.forms import ModelForm
-from .models import location
+from .models import Location
 
 
-class infoForm(ModelForm):
+class getLocationDataForm(ModelForm):
     class Meta:
-        model = location
-        fields = ['city']
+        model = Location
+        fields = ['city', 'zipcode']

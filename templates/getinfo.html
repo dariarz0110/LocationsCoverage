@@ -8,7 +8,14 @@
 <h1>Location info</h1>
 <form method="post">
     {% csrf_token %}
-   {{ form }}
+    {% for field in form %}
+        <p>{{ field.name.upper }}:{{ field }}</p>
+
+        <hr>
+    {% endfor %}
+
+    <br>
+    <br>
     <button type="submit">Look for matches</button>
 </form>
 
